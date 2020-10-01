@@ -1,3 +1,8 @@
+<?php
+session_start();
+error_reporting(0);
+require("noticefunc.php");
+?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 
@@ -305,19 +310,7 @@
 
                         <div class="tab">
                             <div class="all_events " id="scoll" data-simplebar data-simplebar-auto-hide="false">
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>মিল্লাতের মাঠ থেকে সুন্দর জ্যোৎস্না দেখা যাবে।
-                                        </p>
-                                    </div>
-                                </div>
-
-
-
+                                <?php getnotice(); ?>
                                 <div class="event_item ">
                                     <div class="dates">
                                         <p>july</p>
