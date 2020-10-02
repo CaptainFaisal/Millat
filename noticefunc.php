@@ -49,7 +49,7 @@ function getnews(){
       	# code...
 			echo '<div class="cover-pop">
 					<i class="far fa-hand-point-right"> </i>
-					<a href="'.$ns['Files'].'" target="_blank"><p>'.$nw['Title'].'</p></a>
+					<a href="Notice_board/'.$nw['Files'].'" target="_blank"><p>'.$nw['Title'].'</p></a>
 				  </div>';
 		}
 	}
