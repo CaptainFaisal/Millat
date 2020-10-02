@@ -1,9 +1,9 @@
 <?php
 function getnotice(){
 	require("Notice_board/includes/db.php");
-	$sql="SELECT * FROM notices ORDER BY id ASC LIMIT 12";
+	$sql="SELECT `Title` , `Files`, `mydate`, DAY(mydate) AS `day`, SUBSTR(MONTHNAME(mydate),1,3) AS `month` FROM notices ORDER BY id DESC LIMIT 12";
 	if ($result=mysqli_query($con,$sql))
-	{
+	{	
       	//count number of rows in query result
 		$rowcount=mysqli_num_rows($result);
       	//if no rows returned show no posts alert
@@ -16,11 +16,11 @@ function getnotice(){
       	# code...
 			echo '<div class="event_item ">
                     <div class="dates">
-                        <p>july</p>
-                        <h1>7</h1>
+                        <p>'.$ns['month'].'</p>
+                        <h1>'.$ns['day'].'</h1>
                     </div>
                     <div class="events">
-                        <a href="Notice_board/'.$ns['Files'].'"><p>'.$ns['Title'].'
+                        <a href="Notice_board/'.$ns['Files'].'" target="_blank"><p>'.$ns['Title'].'
                         </p></a>
                     </div>
                   </div>';
