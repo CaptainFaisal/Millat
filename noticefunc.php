@@ -30,4 +30,31 @@ function getnotice(){
 	mysqli_close($con);
 }
 
+// news notice
+
+function getnews(){
+	require("Notice_board/includes/db.php");
+	$sql="SELECT `Title` , `Files` FROM notices ORDER BY id DESC LIMIT 4";
+	if ($result=mysqli_query($con,$sql))
+	{	
+      	//count number of rows in query result
+		$rowcount=mysqli_num_rows($result);
+      	//if no rows returned show no posts alert
+		if ($rowcount==0) {
+      		# code...
+			echo 'No News To Fetch';
+		}
+      	//if there are rows available display all the results
+		foreach ($result as $news => $nw) {
+      	# code...
+			echo '<div class="cover-pop">
+					<i class="far fa-hand-point-right"> </i>
+					<a href="'.$ns['Files'].'" target="_blank"><p>'.$nw['Title'].'</p></a>
+				  </div>';
+		}
+	}
+
+	mysqli_close($con);
+}
+
 ?>

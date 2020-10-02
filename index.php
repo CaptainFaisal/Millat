@@ -311,113 +311,6 @@ require("noticefunc.php");
                         <div class="tab">
                             <div class="all_events " id="scoll" data-simplebar data-simplebar-auto-hide="false">
                                 <?php getnotice(); ?>
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>13</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>এবারের ফুলমুনের নাম 'বাক'।
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>একটি ডিফারেন্ট মুনাল-এক্লিপস দেখা যাবে
-                                            যা দেখার আদর্শ স্থান মিল্লাতের মাঠ
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>16</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>হরিণীর জন্মদিবস!
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>মিল্লাতের মাঠ থেকে সুন্দর জ্যোৎস্না দেখা যাবে।
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>মিল্লাতের মাঠ থেকে সুন্দর জ্যোৎস্না দেখা যাবে।
-                                        </p>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>13</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>এবারের ফুলমুনের নাম 'বাক'।
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>একটি ডিফারেন্ট মুনাল-এক্লিপস দেখা যাবে
-                                            যা দেখার আদর্শ স্থান মিল্লাতের মাঠ
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>16</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>হরিণীর জন্মদিবস!
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="event_item ">
-                                    <div class="dates">
-                                        <p>july</p>
-                                        <h1>7</h1>
-                                    </div>
-                                    <div class="events">
-                                        <p>মিল্লাতের মাঠ থেকে সুন্দর জ্যোৎস্না দেখা যাবে।
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1146,21 +1039,7 @@ require("noticefunc.php");
 
             <div class="modalContent">
                 <h1>news</h1>
-                <div class="cover-pop">
-                    <i class="far fa-hand-point-right"> </i>
-                    <p>অনলাইন সেমিনার 2৯-জানুয়ারি শুরু হবে।</p>
-                </div>
-
-                <div class="cover-pop">
-                    <i class="far fa-hand-point-right"> </i>
-                    <p>সাপ্তাহিক জলসা অনুষ্ঠিত হবে প্রতি বৃহস্পতিবার।</p>
-                </div>
-
-                <div class="cover-pop">
-                    <i class="far fa-hand-point-right"> </i>
-                    <p>রেজাল্ট প্রকাশ হবে আগামী ২৩ ফেব্রুয়ারি</p>
-
-                </div>
+                <?php getnews(); ?>
                 <button class="buttonStyle" id="button">Close</button>
 
             </div>

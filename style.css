@@ -126,6 +126,9 @@
 .cover-pop {
      display: flex;
  }
+ .cover-pop a {
+     text-decoration: none;
+ }
 
 
 
@@ -824,6 +827,7 @@
      box-shadow: 0px 0px 9px 0px #00000054 inset;
  }
 
+
  .event_item .dates h1 {
      font-family: 'Dosis', sans-serif;
      background: #fff;
@@ -841,6 +845,11 @@
  .event_item .events p {
      font-family: "BishnuUni";
      font-size: 21px;
+ }
+
+ .event_item .events a {
+     text-decoration: none;
+     color: #000;
  }
 
 

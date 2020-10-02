@@ -234,7 +234,7 @@ $totalnotices=$query->rowCount();
                   "showMethod": "fadeIn",
                   "hideMethod": "fadeOut"
                 }
-                toastr["success"]( "Welcome to Tamirul Millat TAdmin Panel!");
+                toastr["success"]( "Welcome to Tamirul Millat Admin Panel!");
 
             });
         </script>
